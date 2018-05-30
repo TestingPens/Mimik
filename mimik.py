@@ -2,7 +2,6 @@
 
 """
 Mimik is a tool for generating valid RSA ID numbers, and credit card numbers for Mastercard SA and FNB Visa
-Author: Keiran_D
 Version: 1.0 (01-03-2014)
 
 [-] RSA ID FORMAT: [DOB - 6 bits][GENDER - 4 bits][0][RANDOM - 1 bit][PARITY - 1 bit]
@@ -52,4 +51,4 @@ if __name__ == "__main__":
 			parity = calculate_luhn(number)
 			print "[+] CC No: " + number + str(parity)	
 	except Exception, e:
-		print "Your feet are bigger than your flip flops..."
+		print "[-] Your feet are bigger than your flip flops..."
